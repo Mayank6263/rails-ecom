@@ -1,0 +1,6 @@
+<h1>Pages#home</h1>
+<%= link_to "sign-in", user_session_path %>
+<%= link_to "sign-up", new_user_registration_path %>
+<%= button_to "logout", destroy_user_session_path, :method => :delete, :data => { :no_turbolink => true } %>
+
+

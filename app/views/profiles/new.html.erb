@@ -1,0 +1,18 @@
+<h1> Create a profile </h1>
+
+<%= form_with model: @profile do |form| %>
+<%= form.label :name %>
+<%= form.text_field :name %><br>
+
+<%= form.label :contact_no %>
+<%= form.text_field :contact_no%><br>
+
+<%= form.label :age %>
+<%= form.text_field :age %><br>
+
+<%= form.label :gender %>
+<%= form.radio_button :gender, "Male" %>Male
+<%= form.radio_button :gender, "Female" %>Female<br>
+
+<%= form.submit :"create profile" %>
+<% end %>

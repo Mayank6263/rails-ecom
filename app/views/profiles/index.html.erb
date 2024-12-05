@@ -1,0 +1,19 @@
+<h1>User profile </h1>
+<table>
+	<thead>
+		<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Contact_no</th>
+		<th>gender</th>
+	</tr>
+	</thead>
+	<tbody>
+<%= @profiles.each do |form|%>
+	<tr>
+	<td><%= form.name %></td>
+	<td><%= form.contact_no %></td>
+    </tr>
+<% end %>
+</tbody>
+</table>3
